@@ -127,8 +127,9 @@ Gender:
 <input type="radio" name="gender" value="other">Other
 <span class="error">* <?php echo $genderErr;?></span><br><br>
 <br>
-<input type="submit" value="submit">
+<input type="submit"  id="submit"value="submit" >
 </form>
+
 
 <?php 
 //establishing a connection
@@ -190,7 +191,7 @@ if ($tableResult === false) {
 }
 if ($tableResult->num_rows == 0) {
   $signUp="CREATE TABLE Mysignup(
-      id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+      id INT(1) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
       firstname VARCHAR(30) NOT NULL,
       lastname VARCHAR(30) NOT NULL,
       phonenumber VARCHAR(13) NOT NULL,
@@ -210,6 +211,9 @@ if ($tableResult->num_rows == 0) {
       echo "error while creating  signup table".$conn->error."";
     
     }
+    //
+    
+    //
   }
   else {
     $selectQuery = "SELECT * FROM Mysignup";
@@ -238,13 +242,27 @@ firstname,lastname,phonenumber,email,mypassword,gender
 VALUES ('$firstname','$lastname','$phonenumber','$email','$password','$gender')";
 
 if ($conn->query($insertData)===TRUE) {
+  //checking last id allocated 
+  $last_id=$conn->insert_id;
+  $id_query="SELECT id FROM Mysignup ORDER BY id DESC LIMIT 1";
+  $id_result=$conn->query($id_query);
+  if ($id_result->num_rows>0){
+    
+
+    if(['id']!=$last_id){
+      echo "id mismatch";
+     }
+  }else {
+    echo " <br>no records";
+  }}
   
-  echo "new data is inserted  <br>";
+ 
+   ?>";
+   
 
 
-} else{
-  echo "error when inserting new data".$conn->error;
-}
+
+<?php
 
 if (isset($_POST['gender'])) {
   $gender = $conn->real_escape_string($_POST['gender']);
