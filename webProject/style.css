@@ -1,0 +1,194 @@
+/* style.css */
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Add padding */
+    background-color: rgb(32, 32, 221); /* Background color */
+    color: #f4f4f4; /* Text color */
+    overflow: auto; /* Allow scrolling */
+}
+
+/* Center the form container */
+form {
+    background-color: #198123; /* Form background */
+    border: 1px solid hwb(0 90% 7% / 0.95);
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: auto; /* Center horizontally */
+    max-width: 500px; /* Set max width for the form */
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+/* Style the error messages */
+.error {
+    color: red; /* Error text color */
+    font-size: 0.9em; /* Error text size */
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="radio"] {
+    width: 100%; /* Make inputs full-width */
+    padding: 10px; /* Input padding */
+    margin-top: 5px; /* Margin on top */
+    margin-bottom: 20px; /* Margin on bottom */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    text-align: center; /* Center text */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Larger font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    margin-top: 20px; /* Additional margin on top */
+}
+
+/* Style the headings */
+h2 {
+    text-align: center; /* Center headings */
+    color: white; /* Heading color */
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+    background-color: #333; /* Dark background for navigation */
+    padding: 15px; /* Padding for spacing */
+}
+
+/* Navigation link styles */
+.navbar a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Padding around links */
+    margin: 0 10px; /* Space between links */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    background-color: #575757; /* Darker background on hover */
+}
+
+/* Flexbox layout for boxes */
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between containers */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Individual box styles */
+.box {
+    flex: 0 0 calc(25% - 10px); /* 4 boxes per row with space */
+    background-color: #f4f4f4; /* Light background for boxes */
+    border: 1px solid #ccc; /* Border for boxes */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside boxes */
+    margin-bottom: 20px; /* Space below each box */
+    text-align: center; /* Center text inside boxes */
+}
+
+/* Image container styles */
+.image-container {
+    position: relative; /* For positioning arrows */
+    width: 100%; /* Full width */
+    height: 300px; /* Set a height for the image container */
+    overflow: hidden; /* Hide overflow */
+    background-color: #e0e0e0; /* Different background color */
+    display: flex; /* Flexbox for images */
+    align-items: center; /* Center images vertically */
+}
+
+.images {
+    display: flex; /* Horizontal layout for images */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    width: 300%; /* Enough width for three images */
+}
+
+.images img {
+    width: 33.33%; /* Each image takes up one-third of the width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.arrow {
+    position: absolute; /* Position arrows */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical center */
+    cursor: pointer; /* Pointer cursor for arrows */
+    background-color: rgba(255, 255, 255, 0.8); /* Background for arrows */
+    border: 1px solid #ccc; /* Border for arrows */
+    padding: 10px; /* Padding inside arrows */
+    border-radius: 50%; /* Rounded shape */
+}
+
+.arrow.left {
+    left: 10px; /* Position left arrow */
+}
+
+.arrow.right {
+    right: 10px; /* Position right arrow */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .box {
+        flex: 0 0 calc(50% - 10px); /* 2 boxes per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        flex: 0 0 calc(100% - 10px); /* 1 box per row for very small screens */
+    }
+}
+
+/* Cart item styles */
+.cart-items {
+    display: flex; /* Use flexbox for cart items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 20px; /* Space between items */
+}
+
+.cart-item {
+    border: 1px solid #ccc; /* Border for cart items */
+    padding: 10px; /* Padding inside cart items */
+    border-radius: 5px; /* Rounded corners */
+    width: 200px; /* Set a fixed width for each item */
+    text-align: center; /* Center text inside cart items */
+}
+
+.total-cost {
+    margin-top: 20px; /* Margin on top */
+    font-size: 1.2em; /* Font size for total cost */
+    text-align: right; /* Align total to the right */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px; /* Padding for buttons */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}

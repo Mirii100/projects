@@ -89,15 +89,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <img src="/w3images/girl_train.jpg" style="width:90px;">
               </div>
               
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

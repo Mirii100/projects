@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.php">Home</a>
+        <a href="product.php">Products</a>
+        <a href="about.php">About</a>
+        <a href="index.html">Cart</a>
+        <a href="forms.php">Signup</a>
+    </div>
+    <marquee behavior="scroll" direction="left"><h1>Welcome to Alexia</h1></marquee>
+    
+    <div class="image-container">
+        <div class="arrow left" onclick="moveSlide(-1)">&#10094;</div> <!-- Left arrow -->
+        <div class="images">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="arrow right" onclick="moveSlide(1)">&#10095;</div>
+    </div>
+    
+    <br>
+    <div class="content" style="text-align: center; margin-top: 20px;">
+        <div id="cart-container" style="margin-left: 10px; padding: 20px;">
+            <h1>My Cart</h1>
+        </div>
+        <div id="cart-items" style=" display: flex;  flex-direction: row; margin-bottom: 20px;  margin-left: 20px;padding: 20px;">
+            <p>Your cart is empty.</p>
+            <!-- Items will be dynamically added here -->
+        </div>
+        <div id="total-cost" style="font-weight: bold; margin-top: 20px;"></div> 
+    </div>
+    <br>
+    <button onclick="window.location.href='Product.php'">Continue Shopping</button>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
