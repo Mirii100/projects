@@ -1,0 +1,50 @@
+      
+    
+    
+    /* Container styles */
+    .container {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: space-between; /* Space between containers */
+        margin: 20px; /* Margin around the container */
+    }
+
+    /* Individual box styles */
+    .box {
+        display: block; /* Make the box a block element */
+        text-decoration: none; /* Remove underline from links */
+        color: white; /* Set text color to white */
+        flex: 0 1 calc(25% - 10px); /* Allow box to grow and shrink */
+        background-color: #4CAF50; /* Box background color */
+        border: 1px solid #ccc; /* Border for boxes */
+        border-radius: 5px; /* Rounded corners */
+        padding: 20px; /* Padding inside boxes */
+        margin-bottom: 20px; /* Space below each box */
+        text-align: center; /* Center text inside boxes */
+        transition: background-color 0.3s; /* Transition effect for hover */
+        overflow: hidden; /* Hide overflow content */
+    }
+
+    /* Change background color on hover */
+    .box:hover {
+        background-color: #45a049; /* Darken the background on hover */
+    }
+
+    /* Hidden content */
+    .more-content {
+        display: none; /* Initially hide more content */
+        margin-top: 10px; /* Space above more content */
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .box {
+            flex: 0 1 calc(50% - 10px); /* 2 boxes per row for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .box {
+            flex: 0 1 calc(100% - 10px); /* 1 box per row for very small screens */
+        }
+    }

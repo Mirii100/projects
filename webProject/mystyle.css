@@ -1,0 +1,178 @@
+/* mystyle.css */
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0; /* Remove default margins */
+    padding: 20px; /* Padding for the body */
+    background-color: blue; /* Background color for body */
+    color: #f4f4f4; /* Light text color */
+}
+
+/* Container styles */
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between containers */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Individual box styles */
+.box {
+    background-color: #f0f0f0; /* Light background for boxes */
+    border: 1px solid #ccc; /* Border for boxes */
+    border-radius: 10px; /* Keep container corners rounded */
+    width: 150px; /* Initial width for the container */
+    height: auto; /* Height will adjust based on content */
+    display: flex; /* Make the box a flex container */
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: 10px; /* Space around boxes */
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* Position for absolute child elements */
+    transition: all 0.3s ease; /* Smooth transition for expansion */
+    overflow: hidden; /* Hide content that overflows */
+}
+
+/* Expanded state */
+.box.expanded {
+    width: 300px; /* Width when expanded */
+    border-radius: 10px; /* Change border radius when expanded */
+}
+
+/* Box content styles */
+.box-content {
+    text-align: center; /* Center text inside boxes */
+    padding: 10px; /* Padding inside box content */
+}
+
+.more-content {
+    display: none; /* Hide additional content by default */
+    margin-top: 10px; /* Space above additional content */
+    font-size: 14px; /* Smaller font for additional content */
+}
+
+/* Image styles */
+.box-image {
+    width: 30%; /* Resize image to 30% of the container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make images circular */
+    object-fit: cover; /* Cover the entire box while maintaining aspect ratio */
+    margin-bottom: 10px; /* Space below images */
+}
+
+/* Image container styles */
+.image-container {
+    position: relative; /* For positioning arrows */
+    width: 100%; /* Full width */
+    height: 300px; /* Set a height for the image container */
+    overflow: hidden; /* Hide overflow */
+    background-color: #e0e0e0; /* Different background color */
+    display: flex; /* Flexbox for images */
+    align-items: center; /* Center images vertically */
+    margin-bottom: 10px;
+}
+
+.images {
+    display: flex; /* Horizontal layout for images */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    width: 300%; /* Enough width for three images */
+}
+
+.images img {
+    width: 33.33%; /* Each image takes up one-third of the width */
+    height: 50%; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire box while maintaining aspect ratio */
+}
+
+/* Arrow styles */
+.arrow {
+    position: absolute; /* Position arrows */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical center */
+    cursor: pointer; /* Pointer cursor for arrows */
+    background-color: rgba(255, 255, 255, 0.8); /* Background for arrows */
+    border: 1px solid #ccc; /* Border for arrows */
+    padding: 10px; /* Padding inside arrows */
+    border-radius: 50%; /* Rounded shape */
+}
+
+.arrow.left {
+    left: 10px; /* Position left arrow */
+}
+
+.arrow.right {
+    right: 10px; /* Position right arrow */
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align the navigation items to the right */
+    background-color: #333; /* Dark background for navigation */
+    padding: 15px; /* Padding for spacing */
+}
+
+/* Navigation link styles */
+.navbar a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Padding around links */
+    margin: 0 10px; /* Space between links */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    background-color: #575757; /* Darker background on hover */
+}
+
+/* Cart item styles */
+.cart-item img {
+    width: 100px; /* Set image width */
+    height: auto; /* Auto height */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.cart-item {
+    margin-bottom: 20px; /* Space below each cart item */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .box {
+        flex: 0 0 calc(50% - 10px); /* 2 boxes per row for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        flex: 0 0 calc(100% - 10px); /* 1 box per row for very small screens */
+    }
+}
+
+
+.search-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align to the right */
+    margin: 10px; /* Space around the search bar */
+}
+
+.search-input {
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+    width: 200px; /* Set a fixed width */
+}
+
+.search-button {
+    background-color: #333; /* Background for the button */
+    border: 1px solid #ccc; /* Border for the button */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+    padding: 10px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor for the button */
+    color: white; /* Text color for the button */
+}
+
+.search-button:hover {
+    background-color: #575757; /* Darker background on hover */
+}
