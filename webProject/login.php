@@ -89,7 +89,7 @@ $conn->close(); // Close the connection
     <input type="email" name="email" required />
 
     <label for="password">Password:</label>
-    <input type="password" name="password" required>
+    <input type="password" name="password" required min=10>
 
     <input type="submit" value="Login" />
     <i><h4>dont have an account ? signup here <br><a href="index.php">signup</a></h4> </i>

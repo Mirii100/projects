@@ -116,7 +116,9 @@
         <h3>shirts</h3>
         <p>Initial content goes here.</p>
         <div class="more-content">
-            <p>This is more content that is hidden by default. It appears when you click the box.</p><button onclick="addToCart('Container 3')"class="add-cart-btn">Add to Cart</button>
+            <p>This is more content that is hidden by default. It appears when you click the box.</p>
+            <img src="C:\xampp\htdocs\MYPROJECTS\webProject\images\images5.jpeg" alt="Image 2">
+            <button onclick="addToCart('Container 3')"class="add-cart-btn">Add to Cart</button>
             <br>
         </div>
         <button>Read More</button>

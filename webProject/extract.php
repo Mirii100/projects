@@ -15,7 +15,7 @@
     <input type="email" name="email" required />
 
     <label for="password">Password:</label>
-    <input type="password" name="password" required>
+    <input type="password" name="password" required min=10>
 
     <input type="submit" value="Login" />
 </form>

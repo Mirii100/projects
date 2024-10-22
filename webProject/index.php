@@ -32,7 +32,7 @@ $_SESSION['accessed'] = true;
         <input type="email" name="email" id="email" required>
 
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required>
+        <input type="password" name="password" id="password" required min(10)>
 
         <label for="gender">Gender:</label>
         <input type="radio" name="gender" value="female" id="female">Female
