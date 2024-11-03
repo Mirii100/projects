@@ -208,3 +208,6 @@ document.getElementById('view-cart').onclick = function () {
                 performSearch(); // Call performSearch on Enter key press
             }
         });
+
+
+    

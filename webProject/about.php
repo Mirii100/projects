@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
+
     <title>About</title>
 </head>
 <body>
@@ -12,21 +13,23 @@
     <!-- Individual boxes with images will be generated here -->
 </div>
 
-<script>
+
+<script >
+       
     // Array of images and titles
     const boxes = [
-        { src: 'image1.jpg', title: 'Container 1', details: 'More details about Container 1.' },
-        { src: 'image2.jpg', title: 'Container 2', details: 'More details about Container 2.' },
-        { src: 'image3.jpg', title: 'Container 3', details: 'More details about Container 3.' },
-        { src: 'image4.jpg', title: 'Container 4', details: 'More details about Container 4.' },
-        { src: 'image5.jpg', title: 'Container 5', details: 'More details about Container 5.' },
-        { src: 'image6.jpg', title: 'Container 6', details: 'More details about Container 6.' },
-        { src: 'image7.jpg', title: 'Container 7', details: 'More details about Container 7.' },
-        { src: 'image8.jpg', title: 'Container 8', details: 'More details about Container 8.' },
-        { src: 'image9.jpg', title: 'Container 9', details: 'More details about Container 9.' },
-        { src: 'image10.jpg', title: 'Container 10', details: 'More details about Container 10.' },
-        { src: 'image11.jpg', title: 'Container 11', details: 'More details about Container 11.' },
-        { src: 'image12.jpg', title: 'Container 12', details: 'More details about Container 12.' },
+        { src: 'image1.jpg', title: 'Alexander Njuguna Mirii', details: 'senior softwre engineer.' },
+        { src: 'image2.jpg', title: 'Njuguna Miri', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image3.jpg', title: 'Njuguna Miri', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image2.jpg', title: 'Njuguna Miri', details: 'More details about Container 4.' },
+        { src: 'image2.jpg', title: 'Mirii', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image2.jpg', title: 'Mirii', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image2.jpg', title: 'Mirii', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image2.jpg', title: 'Alexander', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image2.jpg', title: 'Alexander', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image2.jpg', title: 'Alexander', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image2.jpg', title: 'Alexander', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
+        { src: 'image2.jpg', title: 'Alex', details: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veritatis qui, porro dolore eius sequi repudiandae at accusantium praesentium necessitatibus aliquam nesciunt atque libero pariatur ipsam facere eos ipsa nam!' },
     ];
 
     // Generate boxes dynamically
@@ -71,7 +74,6 @@
         }
     }
 </script>
-
 </body>
 </html>
 
