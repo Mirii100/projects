@@ -1,0 +1,8 @@
+[build]
+  publish = "/"  # The folder to deploy (root in this case)
+  command = ""    # No build command needed for static sites
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
